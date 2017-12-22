@@ -1,0 +1,79 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD5660
+D Single, 16-Bit nanoDAC with On-Chip Reference in SOT-23
+K ADC
+F ../doc/datasheet/AD5660.pdf
+$ENDCMP
+#
+$CMP C
+D Condensateur non polarise
+$ENDCMP
+#
+$CMP CONN_1
+D 1 pin
+K CONN
+$ENDCMP
+#
+$CMP CONN_12
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP CONN_2
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP CONN_2X2
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP CONN_3X2
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP CONN_5
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP CONN_5X2
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP CONN_6
+D ymbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP MAX3002
+D MAX3000/3001/3002 Level translator, TSSOP package
+$ENDCMP
+#
+$CMP MAX3373
+D bidirectional bus translator SOP23-8 package 
+$ENDCMP
+#
+$CMP MAX3378
+D 4 channel logic level converter, tssop package
+$ENDCMP
+#
+$CMP MAX3393
+D 4 channel logic level converter, tssop package
+$ENDCMP
+#
+$CMP POT
+D Potentionmetre
+K R
+$ENDCMP
+#
+$CMP R
+D Resistance
+K R DEV
+$ENDCMP
+#
+#End Doc Library
