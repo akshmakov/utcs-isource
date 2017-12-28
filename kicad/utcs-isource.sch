@@ -630,7 +630,7 @@ $EndComp
 Wire Wire Line
 	2450 6050 2450 5950
 Wire Wire Line
-	2450 5950 2700 5950
+	2450 5950 3000 5950
 Wire Wire Line
 	2700 5950 2700 6050
 $Comp
@@ -847,4 +847,84 @@ Connection ~ 2600 3650
 Wire Wire Line
 	6950 4000 7050 4000
 NoConn ~ 6250 500 
+$Comp
+L TEST_1P MNT1
+U 1 1 5A440FB6
+P 3950 6150
+F 0 "MNT1" H 3950 6420 50  0000 C CNN
+F 1 "TEST_1P" H 3950 6350 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm_Pad" H 4150 6150 50  0001 C CNN
+F 3 "" H 4150 6150 50  0001 C CNN
+	1    3950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P MNT3
+U 1 1 5A4416B5
+P 4300 6150
+F 0 "MNT3" H 4300 6420 50  0000 C CNN
+F 1 "TEST_1P" H 4300 6350 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm_Pad" H 4500 6150 50  0001 C CNN
+F 3 "" H 4500 6150 50  0001 C CNN
+	1    4300 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P MNT5
+U 1 1 5A44173F
+P 4650 6150
+F 0 "MNT5" H 4650 6420 50  0000 C CNN
+F 1 "TEST_1P" H 4650 6350 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm_Pad" H 4850 6150 50  0001 C CNN
+F 3 "" H 4850 6150 50  0001 C CNN
+	1    4650 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P MNT2
+U 1 1 5A4417D0
+P 3950 6500
+F 0 "MNT2" H 3950 6770 50  0000 C CNN
+F 1 "TEST_1P" H 3950 6700 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm_Pad" H 4150 6500 50  0001 C CNN
+F 3 "" H 4150 6500 50  0001 C CNN
+	1    3950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P MNT4
+U 1 1 5A44188E
+P 4300 6500
+F 0 "MNT4" H 4300 6770 50  0000 C CNN
+F 1 "TEST_1P" H 4300 6700 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm_Pad" H 4500 6500 50  0001 C CNN
+F 3 "" H 4500 6500 50  0001 C CNN
+	1    4300 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P MNT6
+U 1 1 5A44191F
+P 4650 6500
+F 0 "MNT6" H 4650 6770 50  0000 C CNN
+F 1 "TEST_1P" H 4650 6700 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm_Pad" H 4850 6500 50  0001 C CNN
+F 3 "" H 4850 6500 50  0001 C CNN
+	1    4650 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6150 4650 6150
+Connection ~ 4300 6150
+Wire Wire Line
+	3550 6150 3550 6500
+Wire Wire Line
+	3550 6500 4650 6500
+Connection ~ 3950 6150
+Connection ~ 3950 6500
+Connection ~ 4300 6500
+Wire Wire Line
+	3000 5950 3000 6150
+Connection ~ 2700 5950
+Connection ~ 3550 6150
 $EndSCHEMATC
