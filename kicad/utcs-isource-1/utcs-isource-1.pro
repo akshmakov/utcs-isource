@@ -1,4 +1,4 @@
-update=Fri 22 Dec 2017 12:44:48 AM PST
+update=Wed 27 Dec 2017 11:33:42 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../lib
 [eeschema/libraries]
 LibName1=utcs-isource
 LibName2=power

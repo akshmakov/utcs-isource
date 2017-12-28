@@ -1,0 +1,253 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:utcs-isource
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5800 4250 1850 950 
+U 5A44E5B8
+F0 "isource-ch1" 60
+F1 "../utcs-isource-mod/utcs-isource-mod.sch" 60
+F2 "SPI_SCLK" I L 5800 4450 60 
+F3 "SPI_MOSI" I L 5800 4600 60 
+F4 "~SPI_DAC_CS" I L 5800 4750 60 
+F5 "DGND" U L 5800 5050 60 
+F6 "D5V0" U L 5800 4950 60 
+F7 "AGND" U R 7650 4900 60 
+F8 "AVSS" U R 7650 5000 60 
+F9 "AVDD" U R 7650 4800 60 
+F10 "IOUT" B R 7650 4500 60 
+F11 "IRET" B R 7650 4600 60 
+$EndSheet
+$Sheet
+S 5800 2800 1850 1200
+U 5A44ED67
+F0 "isource-ch2" 60
+F1 "../utcs-isource-mod/utcs-isource-mod.sch" 60
+F2 "SPI_SCLK" I L 5800 3050 60 
+F3 "SPI_MOSI" I L 5800 3150 60 
+F4 "~SPI_DAC_CS" I L 5800 3250 60 
+F5 "DGND" U L 5800 3750 60 
+F6 "D5V0" U L 5800 3650 60 
+F7 "AGND" U R 7650 3750 60 
+F8 "AVSS" U R 7650 3850 60 
+F9 "AVDD" U R 7650 3650 60 
+F10 "IOUT" B R 7650 3100 60 
+F11 "IRET" B R 7650 3200 60 
+$EndSheet
+Wire Wire Line
+	4450 4600 5800 4600
+Wire Wire Line
+	5800 4450 4600 4450
+Wire Wire Line
+	4600 4450 4600 3050
+Wire Wire Line
+	3250 3050 5800 3050
+Wire Wire Line
+	3250 3150 5800 3150
+Wire Wire Line
+	4450 3150 4450 4600
+Wire Wire Line
+	5800 4750 4250 4750
+Wire Wire Line
+	4250 4750 4250 3400
+Wire Wire Line
+	4250 3400 3200 3400
+Wire Wire Line
+	5800 3250 3200 3250
+Connection ~ 4450 3150
+Connection ~ 4600 3050
+$Comp
+L AVSS #PWR?
+U 1 1 5A44F6D9
+P 7800 5100
+F 0 "#PWR?" H 7800 5100 30  0001 C CNN
+F 1 "AVSS" H 7800 5030 30  0000 C CNN
+F 2 "" H 7800 5100 60  0000 C CNN
+F 3 "" H 7800 5100 60  0000 C CNN
+	1    7800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVSS #PWR?
+U 1 1 5A44F765
+P 7800 3950
+F 0 "#PWR?" H 7800 3950 30  0001 C CNN
+F 1 "AVSS" H 7800 3880 30  0000 C CNN
+F 2 "" H 7800 3950 60  0000 C CNN
+F 3 "" H 7800 3950 60  0000 C CNN
+	1    7800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVDD #PWR?
+U 1 1 5A44F7F1
+P 7850 3550
+F 0 "#PWR?" H 7850 3650 30  0001 C CNN
+F 1 "AVDD" H 7850 3660 30  0000 C CNN
+F 2 "" H 7850 3550 60  0000 C CNN
+F 3 "" H 7850 3550 60  0000 C CNN
+	1    7850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVDD #PWR?
+U 1 1 5A44F87D
+P 7800 4750
+F 0 "#PWR?" H 7800 4850 30  0001 C CNN
+F 1 "AVDD" H 7800 4860 30  0000 C CNN
+F 2 "" H 7800 4750 60  0000 C CNN
+F 3 "" H 7800 4750 60  0000 C CNN
+	1    7800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR?
+U 1 1 5A44F909
+P 8250 5100
+F 0 "#PWR?" H 8250 5100 40  0001 C CNN
+F 1 "AGND" H 8250 5030 50  0000 C CNN
+F 2 "" H 8250 5100 60  0000 C CNN
+F 3 "" H 8250 5100 60  0000 C CNN
+	1    8250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR?
+U 1 1 5A44F995
+P 8200 3950
+F 0 "#PWR?" H 8200 3950 40  0001 C CNN
+F 1 "AGND" H 8200 3880 50  0000 C CNN
+F 2 "" H 8200 3950 60  0000 C CNN
+F 3 "" H 8200 3950 60  0000 C CNN
+	1    8200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3650 7850 3650
+Wire Wire Line
+	7850 3650 7850 3550
+Wire Wire Line
+	7650 3850 7800 3850
+Wire Wire Line
+	7800 3850 7800 3950
+Wire Wire Line
+	7650 3750 8200 3750
+Wire Wire Line
+	8200 3750 8200 3950
+Wire Wire Line
+	7650 4800 7800 4800
+Wire Wire Line
+	7800 4800 7800 4750
+Wire Wire Line
+	7650 4900 8250 4900
+Wire Wire Line
+	8250 4900 8250 5100
+Wire Wire Line
+	7800 5100 7800 5000
+Wire Wire Line
+	7800 5000 7650 5000
+$Comp
+L +5V #PWR?
+U 1 1 5A44FCB1
+P 5350 3550
+F 0 "#PWR?" H 5350 3400 50  0001 C CNN
+F 1 "+5V" H 5350 3690 50  0000 C CNN
+F 2 "" H 5350 3550 50  0001 C CNN
+F 3 "" H 5350 3550 50  0001 C CNN
+	1    5350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5A44FD3D
+P 5300 4900
+F 0 "#PWR?" H 5300 4750 50  0001 C CNN
+F 1 "+5V" H 5300 5040 50  0000 C CNN
+F 2 "" H 5300 4900 50  0001 C CNN
+F 3 "" H 5300 4900 50  0001 C CNN
+	1    5300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A44FDC9
+P 5300 5200
+F 0 "#PWR?" H 5300 4950 50  0001 C CNN
+F 1 "GND" H 5300 5050 50  0000 C CNN
+F 2 "" H 5300 5200 50  0001 C CNN
+F 3 "" H 5300 5200 50  0001 C CNN
+	1    5300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A44FE55
+P 5350 3850
+F 0 "#PWR?" H 5350 3600 50  0001 C CNN
+F 1 "GND" H 5350 3700 50  0000 C CNN
+F 2 "" H 5350 3850 50  0001 C CNN
+F 3 "" H 5350 3850 50  0001 C CNN
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4950 5300 4950
+Wire Wire Line
+	5300 4950 5300 4900
+Wire Wire Line
+	5800 5050 5300 5050
+Wire Wire Line
+	5300 5050 5300 5200
+Wire Wire Line
+	5800 3650 5350 3650
+Wire Wire Line
+	5350 3650 5350 3550
+Wire Wire Line
+	5800 3750 5350 3750
+Wire Wire Line
+	5350 3750 5350 3850
+$EndSCHEMATC
